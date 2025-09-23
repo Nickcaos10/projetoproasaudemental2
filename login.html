@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Bem-Estar Jovem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">Bem-Estar Jovem</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <form role="search" action="#">
+      <input type="search" aria-label="Buscar" placeholder="Buscar" />
+      <button type="submit">🔍</button>
+    </form>
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="cadastro.html" class="btn-cadastrar">Cadastro</a>
+  </nav>
+</header>
+
+<main class="form-card" aria-label="Área de login">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div style="flex: 1 1 260px; background:#d6e6d1; border-radius: 10px; margin-right: 20px; padding: 30px; text-align: center; min-width: 280px;">
+      <div style="width: 80px; height: 80px; background:#a5bf9f; border-radius: 50%; margin: auto; margin-bottom: 20px;"></div>
+      <h2>Bem-Estar Jovem</h2>
+      <p>Sua rede de apoio para saúde mental e bem-estar.</p>
+    </div>
+    
+    <form style="flex:1 1 260px; min-width: 280px;" method="POST" action="#">
+      <h2>Bem-vindo de volta!</h2>
+      <div class="form-group">
+        <label for="email-login">E-mail</label>
+        <input id="email-login" name="email" type="email" placeholder="email@gmail.com" required />
+      </div>
+      <div class="form-group">
+        <label for="senha-login">Senha</label>
+        <input id="senha-login" name="senha" type="password" placeholder="senha" required />
+      </div>
+      <p style="font-size: 0.9rem; margin-bottom:12px; color:#597c64;"><a href="#" tabindex="0">Esqueceu a senha?</a></p>
+      <button type="submit" class="submit-btn">Entrar</button>
+      <p style="font-size: 0.9rem; margin-top: 12px;">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre nós</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <ul>
+      <li><a href="termos.html">Termos e condições</a></li>
+      <li><a href="privacidade.html">Política de Privacidade</a></li>
+    </ul>
+  </div>
+  <div>
+    Redes sociais:
+    <a href="#" aria-label="Facebook">🔵</a>
+    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Twitter">🐦</a>
+  </div>
+  <div>&copy; 2025 Bem-Estar Jovem. Todos os direitos reservados.</div>
+</footer>
+
+</body>
+</html>
