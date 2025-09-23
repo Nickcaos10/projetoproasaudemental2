@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Bem-Estar Jovem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Bem-Estar Jovem</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <form role="search" action="#">
+      <input type="search" aria-label="Buscar" placeholder="Buscar" />
+      <button type="submit">🔍</button>
+    </form>
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="cadastro.html" class="btn-cadastrar">Cadastro</a>
+  </nav>
+</header>
+
+<main class="form-card" role="main" aria-label="Formulário de contato">
+  <h2>Entre em contato</h2>
+  <p>Se você tiver alguma dúvida ou precisar de ajuda, entre em contato conosco.<br> Responderemos o mais rápido possível.</p>
+  <form>
+    <div class="form-group">
+      <label for="nome">Seu Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="email@gmail.com" required />
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Sua mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Enviar mensagem</button>
+  </form>
+  <div style="margin-top: 20px; text-align: center;">
+    <p>Onde estamos</p>
+    <a href="#" aria-label="Facebook">🔵</a>
+    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Twitter">🐦</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre nós</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <ul>
+      <li><a href="termos.html">Termos e condições</a></li>
+      <li><a href="privacidade.html">Política de Privacidade</a></li>
+    </ul>
+  </div>
+  <div>
+    Redes sociais:
+    <a href="#" aria-label="Facebook">🔵</a>
+    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Twitter">🐦</a>
+  </div>
+  <div>&copy; 2025 Bem-Estar Jovem. Todos os direitos reservados.</div>
+</footer>
+
+</body>
+</html>

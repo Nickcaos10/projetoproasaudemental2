@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro - Bem-Estar Jovem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Bem-Estar Jovem</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <form role="search" action="#">
+      <input type="search" aria-label="Buscar" placeholder="Buscar" />
+      <button type="submit">🔍</button>
+    </form>
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="cadastro.html" class="btn-cadastrar">Cadastro</a>
+  </nav>
+</header>
+
+<main class="form-card" role="main" aria-label="Criar nova conta">
+  <h2>Crie sua conta</h2>
+  <p>Junte-se à nossa comunidade de apoio.</p>
+  <form method="POST" action="#">
+    <div class="form-group">
+      <label for="nome-completo">Nome Completo</label>
+      <input type="text" id="nome-completo" name="nome-completo" placeholder="Seu nome completo" required />
+    </div>
+    <div class="form-group">
+      <label for="email-cadastro">E-mail</label>
+      <input type="email" id="email-cadastro" name="email" placeholder="email@gmail.com" required />
+    </div>
+    <div class="form-group">
+      <label for="senha-cadastro">Senha</label>
+      <input type="password" id="senha-cadastro" name="senha" placeholder="Crie uma senha segura" required />
+    </div>
+    <div class="form-group">
+      <label for="confirma-senha">Confirme a Senha</label>
+      <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required />
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="aceito-politica" required />
+      <label for="aceito-politica">Eu concordo com a <a href="privacidade.html">Política de Privacidade</a></label>
+    </div>
+    <button type="submit" class="submit-btn">Criar Conta</button>
+  </form>
+  <p style="margin-top: 12px;">Já possui uma conta? <a href="login.html">Faça Login</a></p>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre nós</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <ul>
+      <li><a href="termos.html">Termos e condições</a></li>
+      <li><a href="privacidade.html">Política de Privacidade</a></li>
+    </ul>
+  </div>
+  <div>
+    Redes sociais:
+    <a href="#" aria-label="Facebook">🔵</a>
+    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Twitter">🐦</a>
+  </div>
+  <div>&copy; 2025 Bem-Estar Jovem. Todos os direitos reservados.</div>
+</footer>
+
+</body>
+</html>
