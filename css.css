@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header, .footer {
+  background: #ddd;
+  padding: 1rem 0;
+}
+
+.header-container, .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #222;
+}
+
+nav a, .footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.search-input {
+  padding: 0.3rem;
+  margin-right: 1rem;
+}
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  background-color: #8cbf7e;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #8cbf7e;
+}
+
+.btn-logout {
+  background-color: #d9534f;
+  margin-top: 1rem;
+}
+
+.article-card,
+.recent-article {
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.article-card img, .recent-article img {
+  width: 100%;
+  height: auto;
+}
+
+.home-page h1, .about-page h1 {
+  font-weight: 900;
+  margin-bottom: .2em;
+}
+
+.login-register {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.login-box {
+  display: flex;
+  width: 800px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #ccc;
+}
+
+.login-info {
+  background: #c6d4cb;
+  flex: 1;
+  color: #555;
+  text-align: center;
+  padding: 2rem;
+}
+
+.login-info .logo-circle {
+  width: 80px;
+  height: 80px;
+  background: #8cbf7e;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.login-form, .register-form {
+  flex: 1;
+  padding: 2rem;
+}
+
+.login-form input,
+.register-form input,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.login-form button,
+.register-form button,
+.contact-form button {
+  width: 100%;
+}
+
+.team-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  flex: 1 1 140px;
+}
+
+.avatar-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #8cbf7e;
+  margin: 0 auto 0.6rem auto;
+}
