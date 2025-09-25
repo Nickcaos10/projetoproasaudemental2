@@ -1,0 +1,1488 @@
+  type BlogPost = {
+    id: string;
+    title: string;
+    excerpt: string;
+    content: React.ReactNode;
+    author: string;
+    date: string;
+    category: string;
+    coverImgSrc: string;
+    coverImgAlt: string;
+    relatedPosts: { id: string; title: string; coverImgSrc: string; coverImgAlt: string }[];
+  };
+
+  // posts e datas
+  const blogPosts: BlogPost[] = [
+    {
+      id: "ansiedade-juventude",
+      title: "Entenda a Ansiedade na Juventude",
+      excerpt:
+        "Saiba o que é ansiedade, seus sintomas e como reconhecer para buscar ajuda e melhorar sua qualidade de vida.",
+      content: (
+        <>
+          <img
+            src="https://placeholder-image-service.onrender.com/image/900x450?prompt=Foggy morning bicycle ride through forest&  id=ansiedade-juventude-01"
+            alt="Bicycle rider cycling through foggy forest in the morning symbolizing anxiety in youth"
+            className="rounded-md w-full max-w-full mb-6"
+          />
+          <p className="mb-4 text-foreground">
+            Ansiedade é uma resposta natural do corpo e da mente quando se
+            sente ameaçado, estressado ou inseguro. Entretanto, quando ela se torna
+            excessiva ou constante, pode prejudicar a saúde mental e a qualidade de vida.
+          </p>
+          <p className="mb-4 text-foreground">
+            Sentir ansiedade ocasionalmente é normal, mas se ela limitar sua rotina,
+            é importante buscar apoio especializado. Os sintomas podem incluir
+            preocupação excessiva, insônia, taquicardia e dificuldade de concentração.
+          </p>
+          <img
+            src="https://placeholder-image-service.onrender.com/image/900x350?prompt=Line art illustration of person with tangled brain thoughts&  id=ansiedade-juventude-02"
+            alt="Illustration showing a person with tangled thoughts representing mental anxiety"
+            className="rounded-md w-full max-w-full mb-6"
+          />
+          <p className="mb-4 text-foreground">
+            Técnicas de respiração, terapia cognitivo-comportamental e hábitos saudáveis
+            como exercícios físicos podem ajudar a controlar a ansiedade. Nunca hesite
+            em procurar ajuda profissional caso os sintomas persistam.
+          </p>
+          <img
+            src="https://placeholder-image-service.onrender.com/image/900x350?prompt=Illustration of person walking into a bright light at end of a dark tunnel&  id=ansiedade-juventude-03"
+            alt="Person walking towards light at end of tunnel symbolizing hope and recovery"
+            className="rounded-md w-full max-w-full"
+          />
+        </>
+      ),
+
+//vou estilizar um pouco, mas arrumem 
+
+      author: "Por Dr. Leona Lopez",
+      date: "16 de Setembro 2025",
+      category: "Saúde Mental",
+      coverImgSrc:
+        "https://placeholder-image-service.onrender.com/image/400x230?prompt=Foggy morning bicycle ride through forest&  id=ansiedade-juventude-cover",
+      coverImgAlt:
+        "Bicycle rider cycling through foggy forest in the morning symbolizing anxiety in youth",
+      relatedPosts: [
+        {
+          id: "controle-emocoes",
+          title: "Controle suas Emoções",
+          coverImgSrc:
+            "https://placeholder-image-service.onrender.com/image/400x230?prompt=Light bulb drawing with emotion symbols&  id=controle-emocoes-cover",
+          coverImgAlt: "Light bulb drawing surrounded by emotion symbols illustration",
+        },
+        {
+          id: "falar-de-tudo",
+          title: "Falar Dá Alívio",
+          coverImgSrc:
+            "https://placeholder-image-service.onrender.com/image/400x230?prompt=Group therapy discussion with young adults&  id=falar-de-tudo-cover",
+          coverImgAlt: "Group of young adults in therapy discussion session",
+        },
+        {
+          id: "tema-da-viagem",
+          title: "Tema da Viagem",
+          coverImgSrc:
+            "https://placeholder-image-service.onrender.com/image/400x230?prompt=Group of friends hiking in nature&  id=tema-da-viagem-cover",
+          coverImgAlt: "Group of friends hiking in nature during a sunny day",
+        },
+      ],
+    },
+    {
+      id: "controle-emocoes",
+      title: "Controle suas Emoções",
+      excerpt:
+        "Aprenda a reconhecer e dominar suas emoções para melhorar sua saúde emocional e relacionamentos.",
+      content: (
+        //modificar as imagens
+        <>
+          <img
+            src="https://placeholder-image-service.onrender.com/image/900x450?prompt=Blue lightbulb handwritten sketch with arrows and emotions around it&  id=controle-emocoes-01"
+            alt="Blue lightbulb sketch surrounded by arrows and emotional icons representing control of emotions"
+            className="rounded-md w-full max-w-full mb-6"
+          />
+          <p className="mb-4 text-foreground">
+            Controlar as emoções é essencial para o equilíbrio mental e físico. Não se trata
+            de suprimir sentimentos, mas de reconhecê-los e expressá-los adequadamente.
+          </p>
+          <p className="mb-4 text-foreground">
+            Técnicas como mindfulness, terapia e exercícios de respiração ajudam a manter
+            as emoções sob controle, prevenindo reações impulsivas e estresse.
+          </p>
+        </>
+      ),
+      author: "Por Julia Santos",
+      date: "10 de Julho 2025",
+      category: "Saúde Mental",
+      coverImgSrc:
+        "https://placeholder-image-service.onrender.com/image/400x230?prompt=Blue lightbulb handwritten sketch with arrows and emotions around it&  id=controle-emocoes-cover",
+      coverImgAlt:
+        "Blue lightbulb sketch surrounded by arrows and emotional icons representing control of emotions",
+      relatedPosts: [
+        {
+          id: "ansiedade-juventude",
+          title: "Entenda a Ansiedade na Juventude",
+          coverImgSrc:
+            "https://placeholder-image-service.onrender.com/image/400x230?prompt=Foggy morning bicycle ride through forest&  id=ansiedade-juventude-cover",
+          coverImgAlt:
+            "Bicycle rider cycling through foggy forest in the morning symbolizing anxiety in youth",
+        },
+        {
+          id: "tema-da-viagem",
+          title: "Tema da Viagem",
+          coverImgSrc:
+            "https://placeholder-image-service.onrender.com/image/400x230?prompt=Group of friends hiking in nature&  id=tema-da-viagem-cover",
+          coverImgAlt: "Group of friends hiking in nature during a sunny day",
+        },
+      ],
+    },
+  ];
+
+  // "Servidor" simples para simular o armazenamento de postagens para novas postagens de blog por usuário
+  const BLOG_POSTS_STORAGE_KEY = "bem-estar-jovem-language-blogposts";
+  const USER_STORAGE_KEY = "bem-estar-jovem-user";
+
+  // Enumeração de páginas
+  type Page =
+    | "home"
+    | "about"
+    | "blog-list"
+    | "blog-post"
+    | "contact"
+    | "privacy"
+    | "terms"
+    | "login"
+    | "signup"
+    | "profile";
+
+  // Formato dos dados do usuário
+  type User = {
+    fullName: string;
+    email: string;
+    contact: string;
+    loggedIn: boolean;
+  };
+
+  const DEFAULT_USER: User = {
+    fullName: "Fulano de Tal",
+    email: "fulanociclano@gmail.com",
+    contact: "11 90000-1111",
+    loggedIn: false,
+  };
+
+  /** MAIN STATE **/
+  const [page, setPage] = useState<Page>("home");
+  const [currentUser, setCurrentUser] = useState<User>(() => {
+    const storedUser = localStorage.getItem(USER_STORAGE_KEY);
+    if (storedUser) return JSON.parse(storedUser);
+    return DEFAULT_USER;
+  });
+
+  const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
+  const [searchText, setSearchText] = useState("");
+  const [showUserEdit, setShowUserEdit] = useState(false);
+
+  // Postagens de armazenamento do "servidor" ou postagens de amostra
+  const [dynamicPosts, setDynamicPosts] = useState<BlogPost[]>([]);
+
+  // Estado do formulário de inscrição
+  const [signupData, setSignupData] = useState({
+    fullName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    privacyAccepted: false,
+  });
+
+  // Estado do formulário de login
+const  [loginData, setLoginData] = useState({ email: "", password: "" });
+
+  // Contact form
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Load dynamic posts on mount
+  useEffect(() => {
+    const storedPosts = localStorage.getItem(BLOG_POSTS_STORAGE_KEY);
+    if (storedPosts) {
+      try {
+        const posts = JSON.parse(storedPosts) as BlogPost[];
+        setDynamicPosts(posts);
+      } catch {
+        setDynamicPosts([]);
+      }
+    } else {
+      setDynamicPosts([]);
+    }
+  }, []);
+
+  // Save user to localStorage whenever it mudar
+  useEffect(() => {
+    localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(currentUser));
+  }, [currentUser]);
+
+  // Save dynamic posts to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem(BLOG_POSTS_STORAGE_KEY, JSON.stringify(dynamicPosts));
+  }, [dynamicPosts]);
+
+  // Merge static and dynamic posts for display
+  const allPosts = useMemo(() => {
+    return [...dynamicPosts, ...blogPosts];
+  }, [dynamicPosts]);
+
+  // Filtered posts by search text
+  const filteredPosts = useMemo(() => {
+    if (!searchText.trim()) return allPosts;
+    const lowerText = searchText.toLowerCase();
+    return allPosts.filter(
+      (post) =>
+        post.title.toLowerCase().includes(lowerText) ||
+        post.excerpt.toLowerCase().includes(lowerText) ||
+        post.category.toLowerCase().includes(lowerText)
+    );
+  }, [searchText, allPosts]);
+
+  // Get selected blog post for page="blog-post"
+  const selectedPost = useMemo(() => {
+    if (!selectedPostId) return null;
+    return allPosts.find((post) => post.id === selectedPostId) || null;
+  }, [selectedPostId, allPosts]);
+
+  // ----------- HANDLERS -----------
+
+  // Navigation clicks
+  const handleNavigate = (targetPage: Page) => {
+    setPage(targetPage);
+    setSelectedPostId(null);
+    // Reset search on blog list page leave
+    if (page === "blog-list" && targetPage !== "blog-list") {
+      setSearchText("");
+    }
+  };
+
+  // Open blog post page
+  const openPost = (id: string) => {
+    setSelectedPostId(id);
+    setPage("blog-post");
+  };
+
+  // Login simulation (simple: just check email is valid format and any non-empty password)
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!loginData.email.includes("@") || loginData.password.trim().length < 4) {
+      alert("Por favor, insira um e-mail válido e senha com 4 caracteres ou mais.");
+      return;
+    }
+    setCurrentUser({
+      fullName: "Fulano de Tal",
+      email: loginData.email,
+      contact: "11 90000-1111",
+      loggedIn: true,
+    });
+    setLoginData({ email: "", password: "" });
+    setPage("home");
+  };
+
+  // Logout handler
+  const handleLogout = () => {
+    setCurrentUser({ ...DEFAULT_USER, loggedIn: false });
+    setPage("home");
+    setShowUserEdit(false);
+  };
+
+  // Signup simulation - basic validation; after signup logs in user immediately
+  const handleSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { fullName, email, password, confirmPassword, privacyAccepted } = signupData;
+    if (
+      !fullName.trim() ||
+      !email.includes("@") ||
+      password.length < 6 ||
+      password !== confirmPassword
+    ) {
+      alert(
+        "Por favor, verifique os dados inseridos: Nome completo, e-mail válido, e senha com no mínimo 6 caracteres e que coincida."
+      );
+      return;
+    }
+    if (!privacyAccepted) {
+      alert("Você deve aceitar a Política de Privacidade para continuar.");
+      return;
+    }
+    setCurrentUser({
+      fullName,
+      email,
+      contact: "11 90000-1111",
+      loggedIn: true,
+    });
+    setSignupData({
+      fullName: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+      privacyAccepted: false,
+    });
+    setPage("home");
+  };
+
+  // Contact form submit - just alert success
+  const handleContactSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!contactForm.name.trim() || !contactForm.email.includes("@") || !contactForm.message.trim()) {
+      alert("Por favor, preencha todos os campos corretamente.");
+      return;
+    }
+    alert(
+      `Mensagem enviada! Obrigado, ${contactForm.name}. Responderemos o mais rápido possível.`
+    );
+    setContactForm({ name: "", email: "", message: "" });
+  };
+
+  // User profile edit/save
+  const [userEditData, setUserEditData] = useState({
+    fullName: currentUser.fullName,
+    email: currentUser.email,
+    contact: currentUser.contact,
+  });
+
+  useEffect(() => {
+    setUserEditData({
+      fullName: currentUser.fullName,
+      email: currentUser.email,
+      contact: currentUser.contact,
+    });
+  }, [currentUser]);
+
+  const handleUserSave = () => {
+    if (!userEditData.fullName.trim() || !userEditData.email.includes("@")) {
+      alert("Por favor, insira nome completo e e-mail válidos.");
+      return;
+    }
+    setCurrentUser((prev) => ({
+      ...prev,
+      fullName: userEditData.fullName,
+      email: userEditData.email,
+      contact: userEditData.contact,
+    }));
+    setShowUserEdit(false);
+  };
+
+  // SEARCH handler
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(e.target.value);
+  };
+
+  // ------------------ COMPONENTS ------------------
+
+  // NavBar component
+  const NavBar = () => {
+    return (
+      <nav className="w-full bg-background border-b border-border fixed top-0 left-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+          <div className="flex items-center space-x-6">
+            <button
+              onClick={() => handleNavigate("home")}
+              className="font-bold text-lg text-primary hover:underline"
+              aria-label="Ir para página inicial"
+              type="button"
+            >
+              Bem-Estar Jovem
+            </button>
+            <button
+              onClick={() => handleNavigate("blog-list")}
+              className="text-foreground hover:text-primary focus:text-primary"
+              type="button"
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => handleNavigate("about")}
+              className="text-foreground hover:text-primary focus:text-primary"
+              type="button"
+            >
+              Sobre nós
+            </button>
+            <button
+              onClick={() => handleNavigate("contact")}
+              className="text-foreground hover:text-primary focus:text-primary"
+              type="button"
+            >
+              Contato
+            </button>
+          </div>
+          <form
+            className="flex items-center space-x-2 flex-grow max-w-sm ml-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (page !== "blog-list") handleNavigate("blog-list");
+            }}
+            role="search"
+            aria-label="Pesquisar no site"
+          >
+            <input
+              type="search"
+              value={searchText}
+              onChange={handleSearchChange}
+              aria-label="Campo de busca"
+              placeholder="Buscar"
+              className="flex-grow rounded border border-border bg-muted px-3 py-1 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent"
+            />
+            <button
+              type="submit"
+              aria-label="Botão de buscar"
+              className="px-4 bg-primary text-background rounded hover:bg-primary/80 focus:bg-primary/90 transition"
+            >
+              Buscar
+            </button>
+          </form>
+          <div className="ml-6 flex items-center space-x-3">
+            {currentUser.loggedIn ? (
+              <>
+                <button
+                  onClick={() => handleNavigate("profile")}
+                  className="text-primary hover:underline focus:underline"
+                  aria-label="Acessar perfil do usuário"
+                  type="button"
+                >
+                  {currentUser.fullName}
+                </button>
+                <button
+                  onClick={handleLogout}
+                  className="text-destructive hover:underline focus:underline"
+                  aria-label="Sair da conta"
+                  type="button"
+                >
+                  Sair
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  onClick={() => handleNavigate("login")}
+                  className="border border-primary rounded px-4 py-1 text-primary hover:bg-primary hover:text-background transition focus:ring-2 focus:ring-primary focus:outline-none"
+                  type="button"
+                  aria-label="Botão para login"
+                >
+                  Login
+                </button>
+                <button
+                  onClick={() => handleNavigate("signup")}
+                  className="border border-secondary rounded px-4 py-1 text-secondary hover:bg-secondary hover:text-background transition focus:ring-2 focus:ring-secondary focus:outline-none"
+                  type="button"
+                  aria-label="Botão para cadastro"
+                >
+                  Cadastro
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      </nav>
+    );
+  };
+
+  // Footer component
+  const Footer = () => {
+    return (
+      <footer className="w-full bg-muted text-muted-foreground mt-12 p-8">
+        <div className="max-w-7xl mx-auto flex justify-between flex-wrap gap-8">
+          <div className="min-w-[220px] space-y-2">
+            <h3 className="font-semibold text-primary">Navegação</h3>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("home")}
+              type="button"
+            >
+              Início
+            </button>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("about")}
+              type="button"
+            >
+              Sobre nós
+            </button>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("blog-list")}
+              type="button"
+            >
+              Blog
+            </button>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("contact")}
+              type="button"
+            >
+              Contato
+            </button>
+          </div>
+          <div className="min-w-[220px] space-y-2">
+            <h3 className="font-semibold text-primary">Recursos</h3>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("privacy")}
+              type="button"
+            >
+              Política de Privacidade
+            </button>
+            <button
+              className="block text-muted-foreground hover:text-primary focus:text-primary"
+              onClick={() => handleNavigate("terms")}
+              type="button"
+            >
+              Termos e Condições
+            </button>
+            {currentUser.loggedIn && (
+              <button
+                className="block text-muted-foreground hover:text-primary focus:text-primary"
+                onClick={() => handleNavigate("profile")}
+                type="button"
+              >
+                Minha Conta
+              </button>
+            )}
+          </div>
+          <div className="min-w-[220px] space-y-2">
+            <h3 className="font-semibold text-primary">Outros</h3>
+            <p className="text-muted-foreground max-w-xs">
+              Tudo o que você precisa para cuidar da sua saúde mental e bem-estar
+              jovem.
+            </p>
+          </div>
+          <div className="min-w-[220px] space-y-2 flex flex-col items-start">
+            <h3 className="font-semibold text-primary">Onde estamos</h3>
+            <div className="flex space-x-4">
+              {/* Social icons with accessible labels */}
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="hover:text-primary focus:text-primary"
+              >
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/32x32?prompt=Facebook logo icon blue round&  id=facebook-icon"
+                  alt="Ícone do Facebook azul em círculo"
+                  className="h-8 w-8"
+                />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:text-primary focus:text-primary"
+              >
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/32x32?prompt=Instagram logo icon pink gradient round&  id=instagram-icon"
+                  alt="Ícone do Instagram em degradê rosa em círculo"
+                  className="h-8 w-8"
+                />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="hover:text-primary focus:text-primary"
+              >
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/32x32?prompt=Twitter logo icon blue circle&  id=twitter-icon"
+                  alt="Ícone do Twitter azul em círculo"
+                  className="h-8 w-8"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center mt-6 text-sm text-muted-foreground">
+          © 2025 Bem-Estar Jovem. Todos os direitos reservados.
+        </div>
+      </footer>
+    );
+  };
+
+  // Home page component
+  const HomePage = () => {
+    return (
+      <main className="max-w-7xl mx-auto px-8 pt-24 min-h-[70vh]">
+        <section className="bg-muted rounded-lg p-10 mb-12 text-center shadow">
+          <h1 className="text-4xl font-bold text-primary mb-4">
+            Seu Espaço de Apoio
+          </h1>
+          <p className="text-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+            Bem-estar Jovem é um espaço para você, onde saúde mental é prioridade.
+            Conte com conteúdos inspiradores e suporte para trilhar seu caminho de
+            autoconhecimento.
+          </p>
+          <button
+            className="mt-8 bg-primary px-6 py-3 rounded-md text-background text-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+            onClick={() => handleNavigate("blog-list")}
+            type="button"
+            aria-label="Acessar artigos do blog"
+          >
+            Ler Artigos
+          </button>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-primary text-2xl mb-4 font-semibold">Destaques</h2>
+          <div className="flex gap-6 flex-wrap">
+            <article
+              className="w-80 bg-background rounded-lg shadow-md border border-border hover:shadow-lg cursor-pointer"
+              onClick={() => openPost("ansiedade-juventude")}
+              tabIndex={0}
+              aria-label="Destaque artigo Entenda a Ansiedade na Juventude"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") openPost("ansiedade-juventude");
+              }}
+              role="button"
+            >
+              <img
+                src="https://placeholder-image-service.onrender.com/image/320x180?prompt=Foggy morning bicycle ride through forest with anxious young adult&  id=destaque1"
+                alt="Ciclista jovem em floresta enevoada, simbolizando ansiedade"
+                className="rounded-t-lg w-full h-44 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-primary font-semibold text-lg mb-2">
+                  Entenda a Ansiedade na Juventude
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  Como reconhecer os sintomas e encontrar apoio para o equilíbrio.
+                </p>
+              </div>
+            </article>
+            <article
+              className="w-80 bg-background rounded-lg shadow-md border border-border hover:shadow-lg cursor-pointer"
+              onClick={() => openPost("controle-emocoes")}
+              tabIndex={0}
+              aria-label="Destaque artigo Controle suas Emoções"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") openPost("controle-emocoes");
+              }}
+              role="button"
+            >
+              <img
+                src="https://placeholder-image-service.onrender.com/image/320x180?prompt=Blue lightbulb drawing with emotions and arrows around it&  id=destaque2"
+                alt="Desenho de lâmpada azul com setas e emoções ao redor simbolizando controle emocional"
+                className="rounded-t-lg w-full h-44 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-primary font-semibold text-lg mb-2">
+                  Controle suas Emoções
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  Técnicas para reconhecer e gerenciar melhor os seus sentimentos.
+                </p>
+              </div>
+            </article>
+            <article
+              className="w-80 bg-background rounded-lg shadow-md border border-border hover:shadow-lg cursor-pointer"
+              onClick={() => handleNavigate("about")}
+              tabIndex={0}
+              aria-label="Destaque artigo Sobre o Bem-Estar Jovem"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleNavigate("about");
+              }}
+              role="button"
+            >
+              <img
+                src="https://placeholder-image-service.onrender.com/image/320x180?prompt=Group of young people smiling in community support&  id=destaque3"
+                alt="Grupo de jovens sorrindo em uma comunidade de apoio"
+                className="rounded-t-lg w-full h-44 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-primary font-semibold text-lg mb-2">
+                  Sobre o Bem-Estar Jovem
+                </h3>
+                <p className="text-muted-foreground text-sm">Conheça nossa missão e equipe</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-primary text-2xl mb-6">Explore por Tema</h2>
+          <div className="grid grid-cols-5 gap-4">
+            <div className="bg-muted rounded-lg h-40 flex items-center justify-center cursor-pointer hover:bg-accent transition">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/90x90?prompt=Icon representing mental health support and brain&  id=tema-mental-health"
+                alt="Ícone representando suporte à saúde mental e cérebro"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="bg-muted rounded-lg h-40 flex items-center justify-center cursor-pointer hover:bg-accent transition">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/90x90?prompt=Icon representing stress relief and calmness&  id=tema-relaxamento"
+                alt="Ícone representando alívio do estresse e calma"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="bg-muted rounded-lg h-40 flex items-center justify-center cursor-pointer hover:bg-accent transition">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/90x90?prompt=Icon representing lifestyle and wellness habits&  id=tema-habitos"
+                alt="Ícone representando estilo de vida e hábitos de bem-estar"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="bg-muted rounded-lg h-40 flex items-center justify-center cursor-pointer hover:bg-accent transition">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/90x90?prompt=Icon representing resilience and mental strength&  id=tema-resiliencia"
+                alt="Ícone representando resiliência e força mental"
+                className="w-16 h-16"
+              />
+            </div>
+            <div className="bg-muted rounded-lg h-40 flex items-center justify-center cursor-pointer hover:bg-accent transition">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/90x90?prompt=Icon representing therapy and counseling support&  id=tema-terapia"
+                alt="Ícone representando terapia e suporte psicológico"
+                className="w-16 h-16"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  };
+
+//19/09 parei aqui, adicionar componentes da pag
+
+  // About page component
+  const AboutPage = () => {
+    return (
+      <main className="max-w-7xl mx-auto p-8 pt-24 min-h-[70vh]">
+        <h1 className="text-3xl font-bold text-primary mb-8">Bem-Estar Jovem</h1>
+        <section className="mb-8 space-y-6 rounded bg-muted p-6 shadow">
+          <h2 className="text-2xl font-semibold text-primary">Nossa Missão</h2>
+          <p className="text-foreground text-base leading-relaxed max-w-3xl">
+            Criar um acolhimento digital, 24 horas que inspire, apoie e conecte jovens,
+            promovendo saúde mental positiva e qualidade de vida através de conteúdos
+            simples, confiáveis e empáticos.
+          </p>
+          <h2 className="text-2xl font-semibold text-primary">Nossa Visão</h2>
+          <p className="text-foreground text-base leading-relaxed max-w-3xl">
+            Ser referência em redes de apoio jovem, criando ambientes seguros e
+            acolhedores para troca de experiências, aprendizado e crescimento
+            pessoal.
+          </p>
+        </section>
+        <section className="mb-12 bg-muted rounded-lg p-6 shadow">
+          <h2 className="text-2xl font-semibold text-primary mb-6">Nossos Valores</h2>
+          <div className="grid grid-cols-3 gap-6 text-center">
+            <div className="border border-border rounded p-4">
+              <h3 className="font-semibold mb-2 text-primary">Empatia</h3>
+              <p className="text-muted-foreground text-sm">
+                Compreendemos e respeitamos as diversas experiências dos jovens.
+              </p>
+            </div>
+            <div className="border border-border rounded p-4">
+              <h3 className="font-semibold mb-2 text-primary">Confiança</h3>
+              <p className="text-muted-foreground text-sm">
+                Informações rigorosamente revisadas e práticas seguras de apoio.
+              </p>
+            </div>
+            <div className="border border-border rounded p-4">
+              <h3 className="font-semibold mb-2 text-primary">Inclusão</h3>
+              <p className="text-muted-foreground text-sm">
+                Respeito às diversidades e promoção da igualdade para todos.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-primary mb-6">Conheça a Equipe</h2>
+          <div className="grid grid-cols-4 gap-8 max-w-5xl mx-auto">
+            {/* Each member card */}
+            <div className="text-center">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/120x120?prompt=Portrait woman young smiling designer with glasses&  id=team-ana"
+                alt="Portrait of Ana, jovem designer sorridente com óculos"
+                className="rounded-full mx-auto mb-3"
+                width={120}
+                height={120}
+              />
+              <p className="font-semibold text-primary">Ana</p>
+              <p className="text-muted-foreground text-sm">Design Gráfico</p>
+            </div>
+            <div className="text-center">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/120x120?prompt=Portrait woman young smiling psychologist&  id=team-leticia"
+                alt="Retrato de Letícia, jovem psicóloga sorridente"
+                className="rounded-full mx-auto mb-3"
+                width={120}
+                height={120}
+              />
+              <p className="font-semibold text-primary">Letícia Figueiredo</p>
+              <p className="text-muted-foreground text-sm">Psicóloga</p>
+            </div>
+            <div className="text-center">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/120x120?prompt=Portrait man young smiling developer&  id=team-daniel"
+                alt="Retrato de Daniel, jovem desenvolvedor sorridente"
+                className="rounded-full mx-auto mb-3"
+                width={120}
+                height={120}
+              />
+              <p className="font-semibold text-primary">Daniel</p>
+              <p className="text-muted-foreground text-sm">Dev Front-End</p>
+            </div>
+            <div className="text-center">
+              <img
+                src="https://placeholder-image-service.onrender.com/image/120x120?prompt=Portrait woman young smiling financial advisor&  id=team-edudara"
+                alt="Retrato de Edudara, jovem consultora financeira sorridente"
+                className="rounded-full mx-auto mb-3"
+                width={120}
+                height={120}
+              />
+              <p className="font-semibold text-primary">Edudara</p>
+              <p className="text-muted-foreground text-sm">Finanças</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  };
+
+  // Blog list page component
+  const BlogListPage = () => {
+    return (
+      <main className="max-w-7xl mx-auto p-8 pt-24 min-h-[70vh]">
+        <h1 className="text-3xl font-bold text-primary mb-6">Blog</h1>
+        <section className="mb-8 max-w-lg mx-auto">
+          <input
+            type="search"
+            value={searchText}
+            onChange={handleSearchChange}
+            placeholder="Buscar artigos..."
+            aria-label="Buscar artigos no blog"
+            className="w-full rounded border border-border bg-muted px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+          />
+        </section>
+
+        {!filteredPosts.length ? (
+          <div className="text-muted-foreground text-center text-lg my-8">
+            Nenhum artigo encontrado.
+          </div>
+        ) : (
+          <ul className="grid grid-cols-3 gap-8">
+            {filteredPosts.map((post) => (
+              <li key={post.id} className="cursor-pointer rounded-md shadow hover:shadow-lg bg-background border border-border">
+                <div
+                  onClick={() => openPost(post.id)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") openPost(post.id);
+                  }}
+                  tabIndex={0}
+                  aria-label={`Abrir artigo: ${post.title}`}
+                  role="button"
+                >
+                  <img
+                    src={post.coverImgSrc}
+                    alt={post.coverImgAlt}
+                    className="w-full h-40 object-cover rounded-t-md"
+                  />
+                  <div className="p-4">
+                    <h2 className="text-primary font-semibold text-xl mb-2">{post.title}</h2>
+                    <p className="text-muted-foreground">{post.excerpt}</p>
+                    <p className="text-xs text-muted-foreground mt-3 font-mono">
+                      {post.date} - {post.author}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </main>
+    );
+  };
+
+  // Single blog post page component
+  const BlogPostPage = () => {
+    if (!selectedPost) {
+      return (
+        <main className="max-w-7xl mx-auto p-8 pt-24 min-h-[70vh] text-center text-muted-foreground">
+          <p>Artigo não encontrado.</p>
+          <button
+            onClick={() => handleNavigate("blog-list")}
+            className="mt-4 bg-primary px-6 py-2 rounded text-background hover:bg-primary/90"
+            type="button"
+          >
+            Voltar para o Blog
+          </button>
+        </main>
+      );
+    }
+
+    return (
+      <main className="max-w-4xl mx-auto p-8 pt-24 min-h-[70vh]">
+        <article>
+          <h1 className="text-4xl font-bold mb-3 text-primary">{selectedPost.title}</h1>
+          <p className="text-muted-foreground font-mono mb-8">
+            {selectedPost.author} | {selectedPost.date}
+          </p>
+          <div className="prose max-w-none mb-12">{selectedPost.content}</div>
+        </article>
+
+        <section>
+          <h2 className="text-primary text-2xl font-semibold mb-6">Veja Também</h2>
+          <div className="grid grid-cols-3 gap-6">
+            {selectedPost.relatedPosts.map((related) => (
+              <article
+                key={related.id}
+                onClick={() => openPost(related.id)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") openPost(related.id);
+                }}
+                tabIndex={0}
+                role="button"
+                aria-label={`Abrir artigo relacionado ${related.title}`}
+                className="cursor-pointer rounded-lg border border-border shadow-md hover:shadow-lg bg-background"
+              >
+                <img
+                  src={related.coverImgSrc}
+                  alt={related.coverImgAlt}
+                  className="rounded-t-lg w-full h-36 object-cover"
+                />
+                <div className="p-3">
+                  <h3 className="text-primary text-lg font-semibold">{related.title}</h3>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+    );
+  };
+
+  // Contact page component
+  const ContactPage = () => {
+    return (
+      <main className="max-w-2xl mx-auto p-8 pt-24 min-h-[70vh]">
+        <h1 className="text-3xl font-bold text-primary mb-8">Entre em contato</h1>
+        <p className="mb-8 text-foreground max-w-prose">
+          Se você tiver alguma dúvida ou precisar de ajuda, entre em contato conosco.
+          Responderemos o mais rápido possível.
+        </p>
+        <form onSubmit={handleContactSubmit} className="bg-muted rounded-lg p-6 shadow space-y-6">
+          <div>
+            <label htmlFor="contactName" className="block text-primary font-semibold mb-1">
+              Seu Nome
+            </label>
+            <input
+              id="contactName"
+              type="text"
+              value={contactForm.name}
+              onChange={(e) => setContactForm((s) => ({ ...s, name: e.target.value }))}
+              placeholder="Seu nome"
+              required
+              className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div>
+            <label htmlFor="contactEmail" className="block text-primary font-semibold mb-1">
+              E-mail
+            </label>
+            <input
+              id="contactEmail"
+              type="email"
+              value={contactForm.email}
+              onChange={(e) => setContactForm((s) => ({ ...s, email: e.target.value }))}
+              placeholder="email@gmail.com"
+              required
+              className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div>
+            <label htmlFor="contactMessage" className="block text-primary font-semibold mb-1">
+              Sua mensagem
+            </label>
+            <textarea
+              id="contactMessage"
+              value={contactForm.message}
+              onChange={(e) => setContactForm((s) => ({ ...s, message: e.target.value }))}
+              placeholder="Sua mensagem"
+              rows={5}
+              required
+              className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary resize-y"
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-primary text-background px-6 py-3 rounded hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary mt-2"
+          >
+            Enviar mensagem
+          </button>
+        </form>
+      </main>
+    );
+  };
+
+  // Privacy policy page
+  const PrivacyPage = () => {
+    return (
+      <main className="max-w-4xl mx-auto p-8 pt-24 min-h-[70vh] prose prose-invert text-foreground bg-background rounded-lg shadow">
+        <h1>Políticas de Privacidade</h1>
+        <h2>Bem-Estar Jovem</h2>
+        <p>
+          Última atualização: 19/09/2025
+        </p>
+        <p>
+          O <strong>Bem-Estar Jovem</strong> respeita sua privacidade e busca garantir
+          transparência sobre como lidamos com informações dos visitantes do site.
+        </p>
+        <ol className="list-decimal list-inside space-y-4">
+          <li>
+            <strong>Coleta de Informações</strong><br />
+            Nosso site pode coletar dados básicos, como:
+            <ul className="list-disc ml-6 mt-2 space-y-1">
+              <li>Informações fornecidas voluntariamente em formulários de contato (nome e e-mail);</li>
+              <li>Dados de navegação (cookies, páginas acessadas, tempo de permanência).</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Uso das Informações</strong><br />
+            As informações coletadas podem ser utilizadas para:
+            <ul className="list-disc ml-6 mt-2 space-y-1">
+              <li>Melhorar a experiência de navegação;</li>
+              <li>Enviar atualizações, quando o usuário consentir;</li>
+              <li>Garantir segurança e monitoramento de uso do site.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Compartilhamento de Informações</strong><br />
+            Não vendemos, trocamos ou alugamos informações pessoais dos usuários.
+            Podemos compartilhar dados de navegação com ferramentas de análise (ex: Google Analytics), apenas para fins estatísticos.
+          </li>
+          <li>
+            <strong>Cookies</strong><br />
+            Nosso site pode utilizar cookies para personalizar a experiência do usuário.
+            O visitante pode desativar os cookies nas configurações do navegador, mas isso pode limitar algumas funcionalidades.
+          </li>
+          <li>
+            <strong>Segurança</strong><br />
+            Adotamos medidas para proteger os dados dos usuários, porém não podemos garantir segurança absoluta contra ataques ou acessos não autorizados.
+          </li>
+          <li>
+            <strong>Links Externos</strong><br />
+            O site pode conter links para páginas de terceiros.
+            Não nos responsabilizamos pelo conteúdo ou práticas de privacidade desses sites externos.
+          </li>
+          <li>
+            <strong>Alterações na Política</strong><br />
+            Esta Política pode ser atualizada periodicamente.
+            Recomendamos que o usuário consulte esta página regularmente.
+          </li>
+        </ol>
+      </main>
+    );
+  };
+
+  // Terms of Use page
+  const TermsPage = () => {
+    return (
+      <main className="max-w-4xl mx-auto p-8 pt-24 min-h-[70vh] prose prose-invert text-foreground bg-background rounded-lg shadow">
+        <h1>Termos e Condições de Uso</h1>
+        <h2>Bem-Estar Jovem</h2>
+        <p>Última atualização: 19/09/2025</p>
+        <p>
+          Bem-vindo(a) ao <strong>Bem-Estar Jovem</strong>!
+        </p>
+        <p>
+          Ao acessar e utilizar nosso site, você concorda com os seguintes Termos e
+          Condições de Uso. Caso não concorde, recomendamos que não continue a
+          navegação.
+        </p>
+        <ol className="list-decimal list-inside space-y-4">
+          <li>
+            <strong>Objetivo do Site</strong><br />
+            O Bem-Estar Jovem é um espaço informativo, que compartilha artigos e conteúdos
+            sobre saúde mental, bem-estar, fobias, ansiedade, depressão e temas relacionados,
+            voltado especialmente para jovens.
+          </li>
+          <li>
+            <strong>Uso do Conteúdo</strong><br />
+            <ul className="list-disc ml-6 mt-2">
+              <li>O conteúdo é apenas informativo e não substitui orientação médica, psicológica ou profissional.</li>
+              <li>O usuário compromete-se a utilizar o site de forma ética, respeitosa e para fins pessoais.</li>
+              <li>É proibida a cópia, reprodução ou distribuição do conteúdo sem autorização prévia.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Responsabilidade do Usuário</strong><br />
+            <ul className="list-disc ml-6 mt-2">
+              <li>O usuário é responsável por qualquer comentário ou interação realizada no site.</li>
+              <li>O uso de linguagem ofensiva, preconceituosa ou que viole a lei resultará na exclusão do comentário ou bloqueio de acesso.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Limitação de Responsabilidade</strong><br />
+            <ul className="list-disc ml-6 mt-2">
+              <li>O Bem-Estar Jovem não se responsabiliza por decisões tomadas a partir das informações disponíveis no site.</li>
+              <li>Em casos de necessidade, procure sempre apoio médico ou psicológico profissional.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Alterações</strong><br />
+            Os Termos de Uso podem ser alterados a qualquer momento, sem aviso prévio.
+            A versão mais atual estará sempre disponível nesta página.
+          </li>
+        </ol>
+      </main>
+    );
+  };
+
+  // Login page component
+  const LoginPage = () => {
+    return (
+      <main className="max-w-md mx-auto p-8 pt-24 min-h-[70vh] flex items-center justify-center">
+        <div className="shadow-md rounded-lg w-full bg-muted grid grid-cols-2 min-h-[350px]">
+          <div className="flex flex-col items-center justify-center p-8 bg-[#c3d2c7] rounded-l-lg text-center">
+            <div className="rounded-full bg-primary w-20 h-20 mb-4"></div>
+            <h2 className="text-xl font-bold text-primary mb-2">Bem-Estar Jovem</h2>
+            <p className="text-muted-foreground max-w-xs">
+              Sua rede de apoio para saúde mental e bem-estar.
+            </p>
+          </div>
+          <div className="p-8 flex flex-col justify-center">
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Bem-vindo de volta!</h3>
+            <form onSubmit={handleLogin} className="space-y-5">
+              <div>
+                <label
+                  htmlFor="loginEmail"
+                  className="block mb-1 text-muted-foreground font-semibold"
+                >
+                  E-mail
+                </label>
+                <input
+                  id="loginEmail"
+                  type="email"
+                  placeholder="email@gmail.com"
+                  value={loginData.email}
+                  onChange={(e) => setLoginData((s) => ({ ...s, email: e.target.value }))}
+                  required
+                  className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="loginPassword"
+                  className="block mb-1 text-muted-foreground font-semibold"
+                >
+                  Senha
+                </label>
+                <input
+                  id="loginPassword"
+                  type="password"
+                  placeholder="senha"
+                  value={loginData.password}
+                  onChange={(e) => setLoginData((s) => ({ ...s, password: e.target.value }))}
+                  required
+                  className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+                <button
+                  type="button"
+                  onClick={() => alert("Recuperar senha não implementado.")}
+                  className="mt-1 text-sm text-accent hover:underline focus:underline"
+                >
+                  Esqueceu a senha?
+                </button>
+              </div>
+              <button
+                type="submit"
+                className="bg-primary text-background w-full py-2 rounded hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                Entrar
+              </button>
+            </form>
+            <p className="mt-6 text-sm text-muted-foreground text-center">
+              Não tem uma conta?{" "}
+              <button
+                type="button"
+                onClick={() => handleNavigate("signup")}
+                className="text-accent hover:underline focus:underline"
+              >
+                Cadastrar-se
+              </button>
+            </p>
+          </div>
+        </div>
+      </main>
+    );
+  };
+
+  // Signup page component
+  const SignupPage = () => {
+    return (
+      <main className="max-w-md mx-auto p-8 pt-24 min-h-[70vh] flex items-center justify-center">
+        <div className="bg-muted shadow-md rounded-lg p-8 w-full">
+          <h2 className="text-xl font-bold text-primary mb-6">Crie sua conta</h2>
+          <p className="text-muted-foreground mb-6">Junte-se à nossa comunidade de apoio.</p>
+          <form onSubmit={handleSignup} className="space-y-5">
+            <div>
+              <label
+                htmlFor="signupFullName"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                Nome Completo
+              </label>
+              <input
+                id="signupFullName"
+                type="text"
+                value={signupData.fullName}
+                onChange={(e) =>
+                  setSignupData((s) => ({ ...s, fullName: e.target.value }))
+                }
+                placeholder="Seu nome completo"
+                required
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="signupEmail"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                E-mail
+              </label>
+              <input
+                id="signupEmail"
+                type="email"
+                value={signupData.email}
+                onChange={(e) => setSignupData((s) => ({ ...s, email: e.target.value }))}
+                placeholder="email@gmail.com"
+                required
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="signupPassword"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                Senha
+              </label>
+              <input
+                id="signupPassword"
+                type="password"
+                value={signupData.password}
+                onChange={(e) =>
+                  setSignupData((s) => ({ ...s, password: e.target.value }))
+                }
+                placeholder="Crie uma senha segura"
+                required
+                minLength={6}
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="signupConfirmPassword"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                Confirme a Senha
+              </label>
+              <input
+                id="signupConfirmPassword"
+                type="password"
+                value={signupData.confirmPassword}
+                onChange={(e) =>
+                  setSignupData((s) => ({ ...s, confirmPassword: e.target.value }))
+                }
+                placeholder="Confirme sua senha"
+                required
+                minLength={6}
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div className="flex items-center space-x-2">
+              <input
+                id="privacyPolicy"
+                type="checkbox"
+                checked={signupData.privacyAccepted}
+                onChange={(e) =>
+                  setSignupData((s) => ({ ...s, privacyAccepted: e.target.checked }))
+                }
+                required
+                className="focus:ring-primary rounded"
+              />
+              <label htmlFor="privacyPolicy" className="text-muted-foreground text-sm cursor-pointer">
+                Eu concordo com a{" "}
+                <button
+                  type="button"
+                  onClick={() => handleNavigate("privacy")}
+                  className="text-accent hover:underline focus:underline"
+                >
+                  Política de Privacidade
+                </button>
+              </label>
+            </div>
+            <button
+              type="submit"
+              className="bg-primary text-background w-full py-2 rounded hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              Criar Conta
+            </button>
+          </form>
+          <p className="mt-6 text-sm text-muted-foreground text-center">
+            Já possui uma conta?{" "}
+            <button
+              type="button"
+              onClick={() => handleNavigate("login")}
+              className="text-accent hover:underline focus:underline"
+            >
+              Faça Login
+            </button>
+          </p>
+        </div>
+      </main>
+    );
+  };
+
+  // User profile page component
+  const ProfilePage = () => {
+    if (!currentUser.loggedIn) {
+      return (
+        <main className="max-w-md mx-auto p-8 pt-24 min-h-[70vh] text-center">
+          <p className="text-muted-foreground mb-6">Você precisa estar logado para acessar esta página.</p>
+          <button
+            type="button"
+            onClick={() => handleNavigate("login")}
+            className="bg-primary px-6 py-2 rounded text-background hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            Fazer Login
+          </button>
+        </main>
+      );
+    }
+
+    return (
+      <main className="max-w-md mx-auto p-8 pt-24 min-h-[70vh] flex flex-col items-center space-y-8">
+        <div className="rounded-full bg-muted w-28 h-28 flex items-center justify-center text-5xl text-primary select-none">
+          {/* Simple initials avatar */}
+          {currentUser.fullName.charAt(0).toUpperCase()}
+        </div>
+        <h1 className="text-2xl font-semibold text-primary">Olá,</h1>
+        {!showUserEdit ? (
+          <section className="w-full bg-muted p-6 rounded shadow space-y-4">
+            <p className="text-primary font-semibold text-lg">{currentUser.fullName}</p>
+            <p className="text-muted-foreground break-words">{currentUser.email}</p>
+            <p className="text-muted-foreground">{currentUser.contact}</p>
+            <button
+              onClick={() => setShowUserEdit(true)}
+              className="mt-4 bg-primary text-background py-2 px-6 rounded hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+              type="button"
+            >
+              Editar
+            </button>
+          </section>
+        ) : (
+          <section className="w-full bg-muted p-6 rounded shadow space-y-6">
+            <div>
+              <label
+                htmlFor="profileName"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                Nome
+              </label>
+              <input
+                id="profileName"
+                type="text"
+                value={userEditData.fullName}
+                onChange={(e) =>
+                  setUserEditData((s) => ({ ...s, fullName: e.target.value }))
+                }
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="profileEmail"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                E-mail
+              </label>
+              <input
+                id="profileEmail"
+                type="email"
+                value={userEditData.email}
+                onChange={(e) => setUserEditData((s) => ({ ...s, email: e.target.value }))}
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="profileContact"
+                className="block mb-1 text-muted-foreground font-semibold"
+              >
+                Contato
+              </label>
+              <input
+                id="profileContact"
+                type="tel"
+                value={userEditData.contact}
+                onChange={(e) =>
+                  setUserEditData((s) => ({ ...s, contact: e.target.value }))
+                }
+                className="w-full rounded border border-border bg-background px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+            <div className="flex space-x-4">
+              <button
+                onClick={handleUserSave}
+                className="bg-primary text-background px-6 py-2 rounded hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary"
+                type="button"
+              >
+                Salvar
+              </button>
+              <button
+                onClick={() => setShowUserEdit(false)}
+                className="bg-muted border border-border text-muted-foreground px-6 py-2 rounded hover:bg-muted/80 focus:outline-none focus:ring-2 focus:ring-primary"
+                type="button"
+              >
+                Cancelar
+              </button>
+            </div>
+          </section>
+        )}
+      </main>
+    );
+  };
+
+  // Main render switch function for pages
+  const renderCurrentPage = () => {
+    switch (page) {
+      case "home":
+        return <HomePage />;
+      case "about":
+        return <AboutPage />;
+      case "blog-list":
+        return <BlogListPage />;
+      case "blog-post":
+        return <BlogPostPage />;
+      case "contact":
+        return <ContactPage />;
+      case "privacy":
+        return <PrivacyPage />;
+      case "terms":
+        return <TermsPage />;
+      case "login":
+        return <LoginPage />;
+      case "signup":
+        return <SignupPage />;
+      case "profile":
+        return <ProfilePage />;
+      default:
+        return <HomePage />;
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background text-foreground font-sans">
+      <NavBar />
+      <div className="flex-grow">{renderCurrentPage()}</div>
+      <Footer />
+    </div>
+  );
+};
+
+export default BemEstarJovemBlog;
+
+//alguem revisa por favor e adicionem algumas coisas
