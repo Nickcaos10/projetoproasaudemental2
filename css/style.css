@@ -1145,3 +1145,16 @@ footer .copy {
   }
 }
 
+
+.container-image {
+  width: 100%;
+  max-width: 1000px; /* opcional – limita a largura máxima */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  text-align: center; /* garante centralização do conteúdo interno */
+}
+
+.container-image img {
+  width: 90%;      /* ou 100% se quiser ocupar tudo */
+  height: auto;
+  border-radius: 10px;
+}
