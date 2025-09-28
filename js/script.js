@@ -89,19 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
         titulo: 'Como lidar com a ansiedade no dia a dia',
         descricao: 'Descubra técnicas simples para reduzir a ansiedade e manter a mente mais tranquila.',
         tag: 'ansiedade',
-        link: '/pages/artigo1.html'
+        link: '/pages/artigo-ansiedade',
       },
       {
         titulo: 'Depressão: sinais e como buscar ajuda',
         descricao: 'Entenda os sintomas da depressão e saiba como pedir apoio de forma segura.',
         tag: 'depressão',
-        link: '/pages/artigo2.html'
+        link: '/pages/artigo-depressao'
       },
       {
         titulo: 'Fortalecendo a autoestima todos os dias',
         descricao: 'Práticas simples e motivadoras para aumentar a confiança e o amor-próprio.',
         tag: 'autoestima',
-        link: '/pages/artigo3.html'
+        link: '/pages/artigo-autoestima'
       }
     ];
 
