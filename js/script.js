@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       tema: 'ansiedade',
       titulo: 'Entenda a Ansiedade na Juventude',
-      img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
+      img: 'https://casaclinicapsi.com.br/wp-content/uploads/2022/03/ansiedade-1080x675.jpg',
       link: '/pages/artigo-ansiedade/'
     },
     {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       tema: 'autoestima',
       titulo: 'Autoestima: fortalecendo sua confiança',
-      img: 'https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=600&q=80',
+      img: 'https://jpimg.com.br/uploads/2025/02/5-passos-para-fortalecer-a-sua-autoestima.jpg',
       link: '/pages/artigo-autoestima/'
     }
   ];
