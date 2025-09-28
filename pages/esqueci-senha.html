@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Esqueci a senha - Bem-Estar Jovem</title>
+     <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/assets/imgs/logo.png" alt="Bem-Estar Jovem" />
+      </a>
+    </div>
+
+     <!-- menu hambuguer  -->
+    <button class="menu-hamburguer" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="/pages/blog.html">Blog</a>
+      <a href="/pages/sobre.html">Sobre nós</a>
+      <a href="/pages/contato.html">Contato</a>
+
+      <form role="search" action="#">
+        <input type="search" aria-label="Buscar" placeholder="Buscar" />
+        <button type="submit">🔍</button>
+      </form>
+
+      <a href="/pages/login.html" class="btn-login">Login</a>
+      <a href="/pages/cadastro.html" class="btn-cadastrar">Cadastro</a>
+    </nav>
+  </header>  
+
+</body>
+</html>
+
+<div class="container">
+        <h2>Esqueci minha senha</h2>
+        <form id="forgotForm" onsubmit="handleSubmit(event)">
+            <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            <button type="submit">Enviar link de recuperação</button>
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message");
+
+            // Aqui seria feita uma requisição para o servidor (backend)
+            // Por enquanto, vamos simular com uma mensagem
+
+            message.innerText = `Se o e-mail ${email} estiver cadastrado, enviaremos instruções para redefinir sua senha.`;
+        }
+    </script>
+
+     <footer>
+    <div class="footer-nav">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/pages/sobre.html">Sobre nós</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="/pages/termos.html">Termos e condições</a></li>
+        <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+      Redes sociais:
+      <a href="#" aria-label="Facebook">🔵</a>
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+    <div>&copy; 2025 Bem-Estar Jovem. Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
