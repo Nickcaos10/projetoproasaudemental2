@@ -4,101 +4,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog - Entenda a Ansiedade na Juventude | Bem-Estar Jovem</title>
-
+  <title>Blog - Bem-Estar Jovem</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
     <div class="logo">
-      <a href="index.html">
+      <a href="/index.html">
         <img src="/assets/imgs/logo.png" alt="Bem-Estar Jovem" />
       </a>
     </div>
 
-     <!-- menu hambuguer  -->
-    <button class="menu-hamburguer" aria-label="Abrir menu">
-      ☰
-    </button>
+    <button class="menu-hamburguer" aria-label="Abrir menu">☰</button>
 
     <nav>
-      <a href="index.html">Home</a>
+      <a href="/index.html">Home</a>
       <a href="/pages/blog.html">Blog</a>
       <a href="/pages/sobre.html">Sobre nós</a>
       <a href="/pages/contato.html">Contato</a>
 
-      <form role="search" action="#">
-        <input type="search" aria-label="Buscar" placeholder="Buscar" />
+      <form id="searchForm" action="/pages/busca.html" method="GET">
+        <input type="search" name="q" aria-label="Buscar" placeholder="Buscar" />
         <button type="submit">🔍</button>
       </form>
+
 
       <a href="/pages/login.html" class="btn-login">Login</a>
       <a href="/pages/cadastro.html" class="btn-cadastrar">Cadastro</a>
     </nav>
   </header>
 
-  <main class="container artigo-pagina" role="main">
-    <h1>Entenda a Ansiedade na Juventude</h1>
-    <div class="autor-data">Por Fulano, Prof. Dr. Lucas Leoni | 18 de Setembro 2023</div>
+  <main class="container blog-principal" role="main">
+    <h1>Blog - Dicas e Informações para Jovens</h1>
+    <p>Explore nossos artigos sobre saúde mental, autoestima, ansiedade e muito mais.</p>
 
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
-      alt="Imagem sobre ansiedade" style="border-radius:10px; margin-bottom:20px; width:100%; height:auto;" />
+    <div class="cards-blog">
 
-    <p>Ansiedade juvenil pode ser causada por várias situações, muitas que exigem tratamento adequado. A ansiedade é uma
-      resposta natural do corpo ao estresse, mas quando persistente e intensa, pode atrapalhar a rotina da pessoa.</p>
+      <article class="card-artigo">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+          alt="Entenda a Ansiedade na Juventude" />
+        <div class="conteudo-card">
+          <h2>Entenda a Ansiedade na Juventude</h2>
+          <p>Ansiedade juvenil pode atrapalhar a rotina e o bem-estar. Descubra como identificar e lidar com os sintomas.</p>
+          <a href="/pages/artigo-ansiedade.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
 
-    <p>É importante buscar profissionais qualificados e manter uma rede de apoio confiável ao lidar com tais emoções.
-      Técnicas de respiração e mindfulness são recomendadas para o controle dos sintomas.</p>
+      <article class="card-artigo">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
+          alt="Depressão: sinais e como buscar ajuda" />
+        <div class="conteudo-card">
+          <h2>Depressão: sinais e como buscar ajuda</h2>
+          <p>Entenda os sinais da depressão e saiba como buscar apoio de forma segura para melhorar sua qualidade de vida.</p>
+          <a href="/pages/artigo-depressão.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
 
-    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
-      alt="Controle das emoções" style="border-radius:10px; margin:25px 0; width:100%; height:auto;" />
-
-    <p>Além disso, o suporte social, o diálogo aberto com amigos e família e o acompanhamento psicológico aumentam as
-      chances de melhora.</p>
-
-    <div class="veja-tbm" aria-label="Veja também">
-      <h3>Veja Também</h3>
-      <div class="artigos-relacionados">
-        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=140&q=80"
-          alt="Tema da Ansiedade">
-        <img src="https://images.unsplash.com/photo-1486308510493-cb7414d31f6a?auto=format&fit=crop&w=140&q=80"
-          alt="Tema da Depressão">
-        <img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=140&q=80"
-          alt="Tema da Autoestima">
-      </div>
+      <article class="card-artigo">
+        <img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=600&q=80"
+          alt="Autoestima: fortalecendo sua confiança" />
+        <div class="conteudo-card">
+          <h2>Autoestima: fortalecendo sua confiança</h2>
+          <p>Descubra práticas e hábitos que ajudam a aumentar a autoestima e a confiança no dia a dia.</p>
+          <a href="/pages/artigo-autoestima.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
     </div>
   </main>
 
+  <section class="explore-conteudos">
+  <h2>Explore Nossos Conteúdos</h2>
+  <p>Explore nossos artigos sobre saúde mental, autoestima, ansiedade e muito mais.</p>
+ 
+  <div class="temas-barra">
+    <button class="tema ativo" data-tema="todos">Todos</button>
+    <button class="tema" data-tema="ansiedade">Ansiedade</button>
+    <button class="tema" data-tema="depressao">Depressão</button>
+    <button class="tema" data-tema="estresse">Estresse</button>
+    <button class="tema" data-tema="autocuidado">Autocuidado</button>
+    <button class="tema" data-tema="bem-estar">Bem-estar</button>
+  </div>
+
+  <!-- Cards Dinâmicos js-->
+  <div class="cards-dinamicos"></div>
+</section>
+
+ <!-- footer -->
   <footer>
-    <div class="footer-nav">
+    <div class="footer-container">
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/pages/sobre.html">Sobre nós</a></li>
+          <li><a href="/pages/contato.html">Contato</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </div>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/pages/sobre.html">Sobre nós</a></li>
-        <li><a href="/pages/contato.html">Contato</a></li>
-        <li><a href="/pages/blog.html">Blog</a></li>
-      </ul>
+      <div>
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="/pages/termos.html">Termos e condições</a></li>
+          <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
 
-      <ul>
-        <li><a href="/pages/termos.html">Termos e condições</a></li>
-        <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
-      </ul>
+      <div>
+        <h3>Siga-nos</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" aria-label="Facebook">
+            <img src="/assets/imgs/face.png" alt="Facebook">
+          </a>
 
+          <a href="https://www.instagram.com" aria-label="Instagram">
+            <img src="/assets/imgs/insta.png" alt="Instagram">
+          </a>
+
+          <a href="https://x.com" aria-label="Twitter">
+            <img src="/assets/imgs/tt.png" alt="Twitter">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div>
-      Redes sociais:
-      <a href="#" aria-label="Facebook">🔵</a>
-      <a href="#" aria-label="Instagram">📸</a>
-      <a href="#" aria-label="Twitter">🐦</a>
+    <div class="copy">
+      &copy; 2025 Bem-Estar Jovem. Todos os direitos reservados. <br>
+      Um espaço seguro para apoiar o seu bem-estar.
     </div>
-
-    <div>&copy; 2025 Bem-Estar Jovem. Todos os direitos reservados.</div>
   </footer>
 
   <script src="/assets/js/script.js"></script>
-
 </body>
-
 </html>
