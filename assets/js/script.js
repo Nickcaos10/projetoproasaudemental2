@@ -126,3 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+
+addEventListener("submit"), (event) => {
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  let data = {
+    email,
+    password
+  };
+
+  sessionStorage.setItem("session", JSON.stringify(data))
+
+  console.log(JSON.parse(sessionStorage.getItem(session)));
+  
+} 
