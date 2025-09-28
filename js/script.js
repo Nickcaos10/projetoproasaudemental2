@@ -27,19 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
       tema: 'ansiedade',
       titulo: 'Entenda a Ansiedade na Juventude',
       img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-ansiedade.html'
+      link: '/pages/artigo-ansiedade/'
     },
     {
       tema: 'depressao',
       titulo: 'Depressão: sinais e como buscar ajuda',
-      img: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-depressão.html'
+      img: 'https://saude.abril.com.br/wp-content/uploads/2017/02/depressao01.jpg?quality=85&strip=info&w=1280&h=720&crop=1',
+      link: '/pages/artigo-depressao/'
     },
     {
       tema: 'autoestima',
       titulo: 'Autoestima: fortalecendo sua confiança',
       img: 'https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-autoestima.html'
+      link: '/pages/artigo-autoestima/'
     }
   ];
 
