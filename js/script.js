@@ -26,20 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       tema: 'ansiedade',
       titulo: 'Entenda a Ansiedade na Juventude',
-      img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-ansiedade.html'
+      img: 'https://casaclinicapsi.com.br/wp-content/uploads/2022/03/ansiedade-1080x675.jpg',
+      link: '/pages/artigo-ansiedade/'
     },
     {
       tema: 'depressao',
       titulo: 'Depressão: sinais e como buscar ajuda',
-      img: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-depressão.html'
+      img: 'https://saude.abril.com.br/wp-content/uploads/2017/02/depressao01.jpg?quality=85&strip=info&w=1280&h=720&crop=1',
+      link: '/pages/artigo-depressao/'
     },
     {
       tema: 'autoestima',
       titulo: 'Autoestima: fortalecendo sua confiança',
-      img: 'https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=600&q=80',
-      link: '/pages/artigo-autoestima.html'
+      img: 'https://jpimg.com.br/uploads/2025/02/5-passos-para-fortalecer-a-sua-autoestima.jpg',
+      link: '/pages/artigo-autoestima/'
     }
   ];
 
@@ -89,19 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
         titulo: 'Como lidar com a ansiedade no dia a dia',
         descricao: 'Descubra técnicas simples para reduzir a ansiedade e manter a mente mais tranquila.',
         tag: 'ansiedade',
-        link: '/pages/artigo1.html'
+        link: '/pages/artigo-ansiedade',
       },
       {
         titulo: 'Depressão: sinais e como buscar ajuda',
         descricao: 'Entenda os sintomas da depressão e saiba como pedir apoio de forma segura.',
         tag: 'depressão',
-        link: '/pages/artigo2.html'
+        link: '/pages/artigo-depressao'
       },
       {
         titulo: 'Fortalecendo a autoestima todos os dias',
         descricao: 'Práticas simples e motivadoras para aumentar a confiança e o amor-próprio.',
         tag: 'autoestima',
-        link: '/pages/artigo3.html'
+        link: '/pages/artigo-autoestima'
       }
     ];
 
@@ -126,3 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+
+addEventListener("submit"), (event) => {
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  let data = {
+    email,
+    password
+  };
+
+  sessionStorage.setItem("session", JSON.stringify(data))
+
+  console.log(JSON.parse(sessionStorage.getItem(session)));
+  
+} 

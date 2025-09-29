@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bem-Estar Jovem - Seu Espaço de Apoio</title>
 
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
@@ -22,17 +22,17 @@
 
     <nav>
       <a href="index.html">Home</a>
-      <a href="/pages/blog.html">Blog</a>
-      <a href="/pages/sobre.html">Sobre nós</a>
-      <a href="/pages/contato.html">Contato</a>
+      <a href="/pages/blog/">Blog</a>
+      <a href="/pages/sobre/">Sobre nós</a>
+      <a href="/pages/contato/">Contato</a>
 
-      <form id="searchForm" action="/pages/busca.html" method="GET">
+      <form id="searchForm" action="/pages/busca/" method="GET">
         <input type="search" name="q" aria-label="Buscar" placeholder="Buscar" />
         <button type="submit">🔍</button>
       </form>
 
-      <a href="/pages/login.html" class="btn-login">Login</a>
-      <a href="/pages/cadastro.html" class="btn-cadastrar">Cadastro</a>
+      <a href="/pages/login/" class="btn-login">Login</a>
+      <a href="/pages/cadastro/" class="btn-cadastrar">Cadastro</a>
     </nav>
   </header>
 
@@ -45,7 +45,7 @@
         Bem-vindo ao Bem-Estar Jovem, um espaço feito para você encontrar informações,
         trocar experiências e cuidar da sua saúde mental sem julgamentos.
       </p>
-      <a href="/pages/blog.html" class="btn-primary">Explorar Conteúdo</a>
+      <a href="/pages/blog/" class="btn-primary">Explorar Conteúdo</a>
     </div>
   </section>
 
@@ -54,6 +54,8 @@
     <h2>Destaques</h2>
 
     <div class="destaques">
+
+      <a href="pages/ansiedade/ansiedade.html">
       <article tabindex="0" class="card-destaque" aria-label="Tema: Ansiedade">
 
         <img
@@ -62,39 +64,58 @@
         <h3>Ansiedade</h3>
         <p>Dicas práticas para lidar com a ansiedade e recuperar o equilíbrio emocional.</p>
       </article>
+</a>
 
-      <article tabindex="0" class="card-destaque" aria-label="Tema: Depressão">
+ <a href="pages/depre/depre.html">
+      <article tabindex="0" class="card-destaque" aria-label="Tema: Depressão"> 
+      
         <img
-          src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"       
           alt="Imagem sobre depressão" />
+
         <h3>Depressão</h3>
         <p>Estratégias de apoio e inspiração para enfrentar os desafios da depressão.</p>
+     
       </article>
+</a>
 
-      <article tabindex="0" class="card-destaque" aria-label="Tema: Autoestima">
+      <a href="pages/autoestima/autoestima.html">
+      <article tabindex="0" class="card-destaque" aria-label="Autoestima">
+      
         <img
           src="https://images.unsplash.com/vector-1749543354893-1bd4ff661bd0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Imagem sobre autoestima" />
-        <h3>Tema Autoestima</h3>
+        <h3>Autoestima</h3>
         <p>Exercícios e conteúdos para fortalecer a confiança e o amor-próprio.</p>
       </article>
+    </a>
+
+
     </div>
   </section>
   <!-- artigos recentes -->
   <section class="recentes container" aria-label="Artigos recentes">
     <h2>Artigos Recentes</h2>
-    <article class="artigo" tabindex="0" aria-label="Artigo Título do Artigo 1">
-      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=280&q=80"
-        alt="Imagem do artigo 1" />
-      <div class="conteudo">
-        <h3>Como lidar com a ansiedade no dia a dia</h3>
-        <p>Descubra técnicas simples para reduzir a ansiedade e manter a mente mais tranquila.</p>
-        <div class="tag">Ansiedade</div>
+    
+
+    <a href="pages/artigo-ansiedade/">
+  <article class="artigo" tabindex="0" aria-label="Artigo: Como lidar com a ansiedade no dia a dia">
+    <img src="https://casaclinicapsi.com.br/wp-content/uploads/2022/03/ansiedade-1080x675.jpg" alt="Imagem do artigo 1" />
+    <div class="conteudo">
+      <h3>Como lidar com a ansiedade no dia a dia</h3>
+      <p>Descubra técnicas simples para reduzir a ansiedade e manter a mente mais tranquila.</p>
+      <div class="tag">Ansiedade</div>
+    </div>
+  </article>
+</a>
+
+         
       </div>
     </article>
 
+    <a href="/pages/artigo-depressao/">
     <article class="artigo" tabindex="0" aria-label="Artigo Título do Artigo 2">
-      <img src="https://images.unsplash.com/photo-1486308510493-cb7414d31f6a?auto=format&fit=crop&w=280&q=80"
+      <img src="https://saude.abril.com.br/wp-content/uploads/2017/02/depressao01.jpg?quality=85&strip=info&w=1280&h=720&crop=1"
         alt="Imagem do artigo 2" />
       <div class="conteudo">
         <h3>Depressão: sinais e como buscar ajuda</h3>
@@ -102,9 +123,11 @@
         <div class="tag">Depressão</div>
       </div>
     </article>
+    </a>
 
+<a href="/pages/artigo-autoestima/">
     <article class="artigo" tabindex="0" aria-label="Artigo Título do Artigo 3">
-      <img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=280&q=80"
+      <img src="https://jpimg.com.br/uploads/2025/02/5-passos-para-fortalecer-a-sua-autoestima.jpg"
         alt="Imagem do artigo 3" />
       <div class="conteudo">
         <h3>Fortalecendo a autoestima todos os dias</h3>
@@ -112,20 +135,18 @@
         <div class="tag">Autoestima</div>
       </div>
     </article>
+    </a>
   </section>
 
   <!-- exploree temas -->
   <section class="explore-temas" aria-label="Explore por tema">
     <h2>Explore por Tema</h2>
     <p>Encontre conteúdos que ajudam a cuidar da sua mente e emoções de forma prática.</p>
-    <div class="temas-lista">
-      <div class="tema" tabindex="0">Ansiedade</div>
-      <div class="tema" tabindex="0">Depressão</div>
-      <div class="tema" tabindex="0">Autocuidado</div>
-      <div class="tema" tabindex="0">Autoestima</div>
-      <div class="tema" tabindex="0">Fobias</div>
-      <div class="tema" tabindex="0">Stress</div>
-      <div class="tema" tabindex="0">Motivação</div>
+    <div class="temas-lista"> 
+
+    <div class="tema" tabindex="0">Autocuidado</div>
+    <div class="tema" tabindex="0">Stress</div>
+    <div class="tema" tabindex="0">Motivação</div>
     </div>
   </section>
 
@@ -136,17 +157,17 @@
         <h3>Navegação</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="/pages/sobre.html">Sobre nós</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
+          <li><a href="/pages/sobre/">Sobre nós</a></li>
+          <li><a href="/pages/contato/">Contato</a></li>
+          <li><a href="/pages/blog/">Blog</a></li>
         </ul>
       </div>
 
       <div>
         <h3>Recursos</h3>
         <ul>
-          <li><a href="/pages/termos.html">Termos e condições</a></li>
-          <li><a href="/pages/privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/pages/termos/">Termos e condições</a></li>
+          <li><a href="/pages/privacidade/">Política de Privacidade</a></li>
         </ul>
       </div>
 
@@ -174,7 +195,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="/js/script.js"></script>
 
 </body>
 
