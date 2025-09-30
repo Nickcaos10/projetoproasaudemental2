@@ -461,7 +461,7 @@ textarea::placeholder {
 }
 
 .artigo .tag {
-  font-size: 0.+rem;
+  font-size: 0.9rem;
   color: #62895d;
   margin-top: 6px;
 }
@@ -571,6 +571,22 @@ textarea::placeholder {
   font-size: 1.03rem;
   color: #4c5d43;
   line-height: 1.5;
+}
+
+.container-image img {
+  max-width: 100%;   
+  height: auto;      
+  display: block;
+  margin: 20px auto; 
+  border-radius: 10px; 
+}
+
+
+.artigo-pagina,
+.container-image {
+  max-width: 900px; 
+  margin: 0 auto;   
+  padding: 0 15px;   
 }
 
 /* Caixa "Veja Também" */
