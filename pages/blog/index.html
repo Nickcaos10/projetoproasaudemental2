@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Bem-Estar Jovem</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/imgs/logo.png" alt="Bem-Estar Jovem" />
+      </a>
+    </div>
+
+    <!-- menu hambuguer  -->
+    <button class="menu-hamburguer" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/blog/index.html">Blog</a>
+      <a href="/pages/sobre/index.html">Sobre nós</a>
+      <a href="/pages/contato/index.html">Contato</a>
+
+      <form id="searchForm" action="/pages/busca/index.html" method="GET">
+        <input type="search" name="q" aria-label="Buscar" placeholder="Buscar" />
+        <button type="submit">🔍</button>
+      </form>
+
+
+      <a href="/pages/login/index.html" class="btn-login">Login</a>
+      <a href="/pages/cadastro/index.html" class="btn-cadastrar">Cadastro</a>
+    </nav>
+  </header>
+
+    <main class="container blog-principal" role="main">
+    <h1>Blog: Dicas e Insights para Jovens</h1>
+    <p>Explore nossos conteúdos sobre saúde mental, autoestima, ansiedade e hábitos que tornam sua vida mais leve e equilibrada.</p>
+
+    <div class="cards-blog">
+
+      <article class="card-artigo">
+        <img src="https://casaclinicapsi.com.br/wp-content/uploads/2022/03/ansiedade-1080x675.jpg"
+          alt="Entenda a Ansiedade na Juventude" />
+        <div class="conteudo-card">
+          <h2>Entenda a Ansiedade na Juventude</h2>
+          <p>Ansiedade juvenil pode atrapalhar a rotina e o bem-estar. Descubra como identificar e lidar com os sintomas.</p>
+          <a href="/pages/ansiedade/index.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
+
+      <article class="card-artigo">
+        <img src="https://saude.abril.com.br/wp-content/uploads/2017/02/depressao01.jpg?quality=85&strip=info&w=1280&h=720&crop=1"
+          alt="Depressão: sinais e como buscar ajuda" />
+        <div class="conteudo-card">
+          <h2>Depressão: sinais e como buscar ajuda</h2>
+          <p>Entenda os sinais da depressão e saiba como buscar apoio de forma segura para melhorar sua qualidade de vida.</p>
+          <a href="/pages/depressao/index.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
+
+      <article class="card-artigo">
+        <img src="https://jpimg.com.br/uploads/2025/02/5-passos-para-fortalecer-a-sua-autoestima.jpg"
+          alt="Autoestima: fortalecendo sua confiança" />
+        <div class="conteudo-card">
+          <h2>Autoestima: fortalecendo sua confiança</h2>
+          <p>Descubra práticas e hábitos que ajudam a aumentar a autoestima e a confiança no dia a dia.</p>
+          <a href="/pages/autoestima/index.html" class="btn-leia-mais">Leia Mais</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section class="explore-conteudos">
+  <h2>Explore Nossos Conteúdos</h2>
+  <p>Explore nossos artigos sobre saúde mental, autoestima, ansiedade e muito mais.</p>
+ 
+  <div class="temas-barra">
+    <button class="tema ativo" data-tema="todos">Todos</button>
+    <button class="tema" data-tema="ansiedade">Ansiedade</button>
+    <button class="tema" data-tema="depressao">Depressão</button>
+    <button class="tema" data-tema="estresse">Estresse</button>
+    <button class="tema" data-tema="autocuidado">Autocuidado</button>
+    <button class="tema" data-tema="bem-estar">Bem-estar</button>
+  </div>
+
+  <!-- Cards Dinâmicos js-->
+<div class="cards-dinamicos"></div>
+</section>
+
+   <!-- footer -->
+ <footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/sobre/index.html">Sobre nós</a></li>
+        <li><a href="/pages/contato/index.html">Contato</a></li>
+        <li><a href="/pages/blog/index.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="/pages/termos/index.html">Termos e condições</a></li>
+        <li><a href="/pages/privacidade/index.html">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Siga-nos</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" aria-label="Facebook">
+          <img src="/assets/imgs/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram">
+          <img src="/assets/imgs/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com" aria-label="X (Twitter)">
+          <img src="/assets/imgs/x.png" alt="X">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    &copy; 2025 Bem-Estar Jovem. Todos os direitos reservados. <br>
+    Um espaço seguro para apoiar o seu bem-estar.
+  </div>
+</footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

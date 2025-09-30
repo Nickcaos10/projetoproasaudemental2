@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Bem-Estar Jovem</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/imgs/logo.png" alt="Bem-Estar Jovem" />
+      </a>
+    </div>
+
+    <!-- menu hambuguer  -->
+    <button class="menu-hamburguer" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/blog/index.html">Blog</a>
+      <a href="/pages/sobre/index.html">Sobre nós</a>
+      <a href="/pages/contato/index.html">Contato</a>
+
+      <form id="searchForm" action="/pages/busca/index.html" method="GET">
+        <input type="search" name="q" aria-label="Buscar" placeholder="Buscar" />
+        <button type="submit">🔍</button>
+      </form>
+
+
+      <a href="/pages/login/index.html" class="btn-login">Login</a>
+      <a href="/pages/cadastro/index.html" class="btn-cadastrar">Cadastro</a>
+    </nav>
+  </header>
+
+  <main class="form-card" role="main" aria-label="Formulário de contato">
+    <h2>Entre em contato</h2>
+    <p>Se você tiver alguma dúvida ou precisar de ajuda, entre em contato conosco.<br> Responderemos o mais rápido
+      possível.</p>
+    <form>
+      <div class="form-group">
+        <label for="nome">Seu Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="email@gmail.com" required />
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Sua mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar mensagem</button>
+    </form>
+  
+  </main>
+
+    <!-- footer -->
+ <footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/sobre/index.html">Sobre nós</a></li>
+        <li><a href="/pages/contato/index.html">Contato</a></li>
+        <li><a href="/pages/blog/index.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="/pages/termos/index.html">Termos e condições</a></li>
+        <li><a href="/pages/privacidade/index.html">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Siga-nos</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" aria-label="Facebook">
+          <img src="/assets/imgs/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram">
+          <img src="/assets/imgs/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com" aria-label="X (Twitter)">
+          <img src="/assets/imgs/x.png" alt="X">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    &copy; 2025 Bem-Estar Jovem. Todos os direitos reservados. <br>
+    Um espaço seguro para apoiar o seu bem-estar.
+  </div>
+</footer>
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>

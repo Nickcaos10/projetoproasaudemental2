@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Bem-Estar Jovem</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/imgs/logo.png" alt="Bem-Estar Jovem" />
+      </a>
+    </div>
+
+    <!-- Menu Hambúrguer -->
+    <button class="menu-hamburguer" aria-label="Abrir menu">☰</button>
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/blog/index.html">Blog</a>
+      <a href="/pages/sobre/index.html">Sobre nós</a>
+      <a href="/pages/contato/index.html">Contato</a>
+
+      <form id="searchForm" action="/pages/busca/index.html" method="GET">
+        <input type="search" name="q" aria-label="Buscar" placeholder="Buscar" />
+        <button type="submit">🔍</button>
+      </form>
+
+      <a href="/pages/login/index.html" class="btn-login">Login</a>
+      <a href="/pages/cadastro/index.html" class="btn-cadastrar">Cadastro</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CADASTRO -->
+  <main class="form-card" role="main" aria-label="Criar nova conta">
+    <div class="cadastro-wrapper" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+      <!-- Card de informação opcional -->
+      <div class="info-card" style="flex:1 1 260px; min-width:260px; background:#d6e6d1; border-radius:10px; padding:30px; text-align:center;">
+        <div class="logo-circle" style="width:80px; height:80px; background:#a5bf9f; border-radius:50%; margin:0 auto 20px auto;"></div>
+        <h2>Crie sua conta</h2>
+        <p>Junte-se à nossa comunidade de apoio para saúde mental e bem-estar.</p>
+      </div>
+
+      <!-- Formulário de cadastro -->
+      <form class="cadastro-form" style="flex:1 1 260px; min-width:280px;" method="POST" action="#">
+        <div class="form-group">
+          <label for="nome-completo">Nome Completo</label>
+          <input type="text" id="nome-completo" name="nome-completo" placeholder="Seu nome completo" required />
+        </div>
+        <div class="form-group">
+          <label for="email-cadastro">E-mail</label>
+          <input type="email" id="email-cadastro" name="email" placeholder="email@gmail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="senha-cadastro">Senha</label>
+          <input type="password" id="senha-cadastro" name="senha" placeholder="Crie uma senha segura" required />
+        </div>
+        <div class="form-group">
+          <label for="confirma-senha">Confirme a Senha</label>
+          <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="aceito-politica" required />
+          <label for="aceito-politica">Eu concordo com a <a href="/pages/privacidade/index.html">Política de Privacidade</a></label>
+        </div>
+        <button type="submit" class="submit-btn">Criar Conta</button>
+        <p style="margin-top: 12px;"><a href="/pages/login/index.html">Já possui uma conta? Faça Login</a></p>
+      </form>
+
+    </div>
+  </main>
+
+   <!-- footer -->
+ <footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/sobre/index.html">Sobre nós</a></li>
+        <li><a href="/pages/contato/index.html">Contato</a></li>
+        <li><a href="/pages/blog/index.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="/pages/termos/index.html">Termos e condições</a></li>
+        <li><a href="/pages/privacidade/index.html">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Siga-nos</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" aria-label="Facebook">
+          <img src="/assets/imgs/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram">
+          <img src="/assets/imgs/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com" aria-label="X (Twitter)">
+          <img src="/assets/imgs/x.png" alt="X">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    &copy; 2025 Bem-Estar Jovem. Todos os direitos reservados. <br>
+    Um espaço seguro para apoiar o seu bem-estar.
+  </div>
+</footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
