@@ -67,10 +67,5 @@ O **Bem-Estar Jovem** é o projeto final do programa **PROA x Serasa**. Ele foi 
 - Para grandes mudanças, abra uma issue primeiro para discutir o que deseja alterar.
 - Mantenha o estilo e padrão de código existentes.
 
-## 🚀 Como Executar o Projeto Localmente
-1. Clone o repositório:  
-   ```bash
-git clone https://github.com/Nickcaos10/projetoproasaudemental2.git
-
 ---
 **Obrigado por visitar o projeto!** 🙌
