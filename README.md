@@ -1,4 +1,4 @@
-# Bem-Estar Jovem ![Logo](/assets/imgs/logo.png)
+# ![Logo](/assets/imgs/logo.png)
 
 <p align="center">
   <strong>Um espaço seguro, acessível e confiável para jovens que enfrentam desafios relacionados à saúde mental.</strong>
