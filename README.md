@@ -1,4 +1,4 @@
-# 🌱 Bem-Estar Jovem  
+# Bem-Estar Jovem ![Logo](/assets/imgs/logo.png)
 
 <p align="center">
   <strong>Um espaço seguro, acessível e confiável para jovens que enfrentam desafios relacionados à saúde mental.</strong>
@@ -6,16 +6,14 @@
 
 ---
 
-## 📖 Sobre o Projeto  
-O **Bem-Estar Jovem** nasceu da necessidade de criar uma plataforma que reúna informações de qualidade, facilite o acesso a profissionais e grupos de apoio e ofereça um ambiente acolhedor para troca de experiências.  
-
-Este é o **projeto final do programa PROA x Serasa**, onde aplicamos na prática os conhecimentos adquiridos durante o curso.  
+## 📖 Sobre o Projeto
+O **Bem-Estar Jovem** é o projeto final do programa **PROA x Serasa**. Ele foi criado para reunir informações de qualidade, facilitar o acesso a profissionais e grupos de apoio e oferecer um ambiente acolhedor para troca de experiências.
 
 ---
 
 ## 🎯 Objetivos
 - Informar com conteúdo confiável sobre saúde mental.  
-- Reduzir barreiras (estigma, medo do julgamento).  
+- Reduzir barreiras como estigma e medo do julgamento.  
 - Conectar jovens a profissionais e grupos de apoio.  
 - Proporcionar um espaço seguro para troca de experiências.
 
@@ -28,6 +26,7 @@ Este é o **projeto final do programa PROA x Serasa**, onde aplicamos na prátic
 ---
 
 ## 🛠️ Tecnologias & Ferramentas
+
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=fff" />
   <img src="https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=fff" />
@@ -38,31 +37,40 @@ Este é o **projeto final do programa PROA x Serasa**, onde aplicamos na prátic
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=fff" />
 </p>
 
-**Principais:**  
-- HTML5, CSS3, JavaScript (ES6+) — projeto frontend estático.  
-- Design / Wireframes: **Figma**.  
-- Editor: **Visual Studio Code** (+ extensão *Live Server* para preview).  
-- Versionamento: **Git** e **GitHub**.  
+**Principais Tecnologias:**  
+- **HTML5, CSS3, JavaScript (ES6+)** — desenvolvimento frontend estático.  
+- **Figma** — design, prototipagem e wireframes.  
+- **Visual Studio Code + Live Server** — editor e preview local.  
+- **Git & GitHub** — versionamento e controle de código.
 
-**Observações rápidas:** projeto não depende de back-end externo (arquivos estáticos). Para testar localmente, abrir `index.html` ou usar Live Server no VS Code.
+**Links importantes:**  
+- 🎨 Protótipos no Figma: [Ver protótipos](https://www.figma.com/design/E3bhDPWzbTP0ggrlYNDuU3/Bem-Estar-Jovem---prot%C3%B3tipos?m=auto&t=DTrrYOWzXj7DLPHe-6)  
+- 📖 Dossiê do Projeto: [Acessar Dossiê](https://heyzine.com/flip-book/3b723cbc14.html)
 
 ---
 
 ## 👩‍💻 Equipe
 
-| Nome                     | Funções                                    |
-|--------------------------|--------------------------------------------|
-| **Ana Clara Vicente**    | Back-end, Front-end, Liderança             |
-| **Letícia Figueiredo**   | Design (Wireframes), Front-end, Suporte    |
-| **Eduardo dos Santos**   | Tech Lead                                  |
-| **Eduarda Matutino**     | Front-end                                  |
-| **Kelita Calle Morales** | Documentação (Dossiê)                      |
-| **Roberta**              | —                                          |
+| Nome                        | Funções                                        | GitHub                                            |
+|-----------------------------|------------------------------------------------|---------------------------------------------------|
+| **Ana Clara Vicente**       | Back-end, Front-end, Liderança                 | [Perfil](https://github.com/Nickcaos10)           |
+| **Letícia Figueiredo**      | Design (Wireframes/Figma), Front-end, Suporte  | [Perfil](https://github.com/leticiahfs)           |
+| **Eduardo dos Santos**      | Tech Lead                                      | [Perfil](https://github.com/duzonho)              |
+| **Eduarda Matutino**        | Front-end                                      | [Perfil](https://github.com/Eduarda-Matutino)     |
+| **Kelita Calle Morales**    | Documentação (Dossiê)                          | [Perfil](https://github.com/kelita555)            |
+| **Roberta Alixandri**       | Documentação                                   | [Perfil](https://github.com/Robertaalix)          |
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente  
-1. Clone este repositório:  
+## 🤝 Contribuições
+- Pull requests são bem-vindos!
+- Para grandes mudanças, abra uma issue primeiro para discutir o que deseja alterar.
+- Mantenha o estilo e padrão de código existentes.
+
+## 🚀 Como Executar o Projeto Localmente
+1. Clone o repositório:  
    ```bash
-   git clone https://github.com/Nickcaos10/projetoproasaudemental2.git
-    
+git clone https://github.com/Nickcaos10/projetoproasaudemental2.git
+
+---
+**Obrigado por visitar o projeto!** 🙌
