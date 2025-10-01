@@ -8,7 +8,7 @@
 
 body {
   background: #F7F7F7;
-    color: #495A58;
+  color: #495A58;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -574,19 +574,19 @@ textarea::placeholder {
 }
 
 .container-image img {
-  max-width: 100%;   
-  height: auto;      
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin: 20px auto; 
-  border-radius: 10px; 
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 
 .artigo-pagina,
 .container-image {
-  max-width: 900px; 
-  margin: 0 auto;   
-  padding: 0 15px;   
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Caixa "Veja Também" */
@@ -627,7 +627,7 @@ textarea::placeholder {
 
 .veja-tbm .artigos-relacionados a:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .veja-tbm .artigos-relacionados img {
@@ -1037,20 +1037,20 @@ header nav .btn-cadastrar:hover {
 
 /* Cards Dinâmicos */
 .cards-dinamicos {
-  display: grid;
-  grid-template-columns: repeat(3, auto); 
-  justify-content: center; 
-  gap: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   padding: 20px;
 }
 
 .card-dinamico {
-  width: 260px;         
-  margin-left: 5px;      
-  margin-right: 5px;    
+  width: 260px;
+  margin-left: 5px;
+  margin-right: 5px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1060,7 +1060,7 @@ header nav .btn-cadastrar:hover {
 
 .card-dinamico:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card-dinamico img {
@@ -1103,7 +1103,8 @@ header nav .btn-cadastrar:hover {
 /* Ajustes para mobile bem pequeno (<= 480px) */
 @media (max-width: 480px) {
   .cards-dinamicos {
-    grid-template-columns: 1fr; /* força 1 por linha */
+    grid-template-columns: 1fr;
+    /* força 1 por linha */
     padding: 15px;
   }
 
